@@ -1,0 +1,21 @@
+{
+    "name": "flora-mongodb",
+    "version": "0.0.0",
+    "private": true,
+    "author": {
+        "name": "Nico Kaiser",
+        "email": "nico.kaiser@boerse-go.de"
+    },
+    "description": "MongoDB datasource for Flora",
+    "main": "index.js",
+    "dependencies": {
+        "mongodb": "1.4.x"
+    },
+    "devDependencies": {
+        "chai": "^1.9.1",
+        "mocha": "2.1.x"
+    },
+    "engines": {
+        "node": "0.10.x"
+    }
+}
