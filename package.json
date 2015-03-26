@@ -1,21 +1,37 @@
 {
-    "name": "flora-mongodb",
-    "version": "0.1.0",
-    "private": true,
-    "author": {
-        "name": "Nico Kaiser",
-        "email": "nico.kaiser@boerse-go.de"
-    },
-    "description": "MongoDB datasource for Flora",
-    "main": "index.js",
-    "dependencies": {
-        "mongodb": "1.4.x"
-    },
-    "devDependencies": {
-        "chai": "^1.9.1",
-        "mocha": "2.1.x"
-    },
-    "engines": {
-        "node": ">=0.10.x"
+  "name": "flora-mongodb",
+  "version": "0.1.0",
+  "description": "MongoDB connection for Flora",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": {
+    "name": "BörseGo AG",
+    "email": "it@boerse-go.de"
+  },
+  "homepage": "https://github.com/godmodelabs/flora-mongodb",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/godmodelabs/flora-mongodb.git"
+  },
+  "contributors": [
+    {
+      "name": "Nico Kaiser",
+      "email": "nico.kaiser@boerse-go.de"
     }
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "mongodb": "1.4.x"
+  },
+  "devDependencies": {
+    "chai": "2.1.x",
+    "eslint": "0.17.0",
+    "istanbul": "0.3.x",
+    "mocha": "2.1.x"
+  }
 }
