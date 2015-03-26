@@ -1,8 +1,15 @@
 'use strict';
 
 var expect = require('chai').expect;
+var bunyan = require('bunyan');
+var DataSource = require('../');
 
-var floraCluster = require('../');
+var log = bunyan.createLogger({name: 'null', streams: []});
+
+// mock Api instance
+var api = {
+    log: log
+};
 
 describe('flora-mongodb', function () {
     var config = {
@@ -13,17 +20,18 @@ describe('flora-mongodb', function () {
     };
 
     it('should be a function', function () {
-        expect(floraCluster).to.be.a('function');
+        expect(DataSource).to.be.a('function');
     });
 
-    it('should return an object', function () {
-        expect(floraCluster(config)).to.be.an('object'); 
+    it('should be instantiable', function () {
+        expect(new DataSource(api, config)).to.be.an('object'); 
     });
 
     it('should expose "prepare" and "process" functions', function () {
-        expect(floraCluster(config)).to.have.property('prepare');
-        expect(floraCluster(config).prepare).to.be.a('function');
-        expect(floraCluster(config)).to.have.property('process');
-        expect(floraCluster(config).process).to.be.a('function');
+        var ds = new DataSource(api, config);
+        expect(ds).to.have.property('prepare');
+        expect(ds.prepare).to.be.a('function');
+        expect(ds).to.have.property('process');
+        expect(ds.process).to.be.a('function');
     });
 });
