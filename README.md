@@ -1,10 +1,15 @@
-# Flora MongoDB-DataSource
+Flora MongoDB DataSource
+========================
 
-MongoDB connector for [Flora](https://github.com/godmodelabs/flora).
+[![Build Status](https://travis-ci.org/godmodelabs/flora-mongodb.svg?branch=master)](https://travis-ci.org/godmodelabs/flora-mongodb)
+[![NPM version](https://badge.fury.io/js/flora-mongodb.svg)](https://www.npmjs.com/package/flora-mongodb)
+
+MongoDB connection for [Flora](https://github.com/godmodelabs/flora).
 
 This is a very early status of implementation and prone to change in the future.
 
-## Usage
+Usage
+-----
 
 ### Configuration
 
@@ -55,10 +60,14 @@ Objects in the database look like this (storedType is used to convert the numeri
 }
 ```
 
-## Known Issues
+
+Known Issues
+------------
 
 Currently, authentication and reconnect is not supported.
 
-## License
 
-MIT
+License
+-------
+
+[MIT](LICENSE)
