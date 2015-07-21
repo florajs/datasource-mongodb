@@ -32,6 +32,47 @@ The module has to be added to a Flora config file by using the `dataSources` obj
 }
 ```
 
+Alternatively, a Replica Set can be used:
+
+```
+'dataSources': {
+    ...
+    'mongodb': {
+        'constructor': require('flora-mongodb'),
+            'options': {
+                'replicaSet': 'mycluster',
+                'servers': [
+                    {'host': 'mongo-1', 'port': 27017},
+                    {'host': 'mongo-2', 'port': 27017}
+                ]
+            }
+        }
+    }
+    ...
+}
+```
+
+Authentication can be done:
+
+```
+'dataSources': {
+    ...
+    'mongodb': {
+        'constructor': require('flora-mongodb'),
+            'options': {
+                server': {
+                    'host': 'localhost',
+                    'port': 27017
+                },
+                'username': 'dbuser',
+                'password': 'dbpassword'
+            }
+        }
+    }
+    ...
+}
+```
+
 ### Resources
 
 Given you want to use the database "mydatabase" on the host configured above. To map "mycollection" to a resource, the following XML can be used:
@@ -59,12 +100,6 @@ Objects in the database look like this (storedType is used to convert the numeri
     }
 }
 ```
-
-
-Known Issues
-------------
-
-Currently, authentication and reconnect is not supported.
 
 
 License
