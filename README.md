@@ -3,6 +3,7 @@ Flora MongoDB DataSource
 
 [![Build Status](https://travis-ci.org/godmodelabs/flora-mongodb.svg?branch=master)](https://travis-ci.org/godmodelabs/flora-mongodb)
 [![NPM version](https://badge.fury.io/js/flora-mongodb.svg)](https://www.npmjs.com/package/flora-mongodb)
+[![Dependencies](https://img.shields.io/david/godmodelabs/flora-mongodb.svg)](https://david-dm.org/godmodelabs/flora-mongodb)
 
 MongoDB connection for [Flora](https://github.com/godmodelabs/flora).
 
