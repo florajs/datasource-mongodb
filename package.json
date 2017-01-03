@@ -13,10 +13,7 @@
   },
   "homepage": "https://github.com/godmodelabs/flora-mongodb",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/godmodelabs/flora-mongodb.git"
-  },
+  "repository": "godmodelabs/flora-mongodb",
   "contributors": [
     {
       "name": "Nico Kaiser",
