@@ -53,7 +53,7 @@ Alternatively, a Replica Set can be used:
 }
 ```
 
-Authentication can be done:
+Other additional options:
 
 ```
 'dataSources': {
@@ -61,7 +61,9 @@ Authentication can be done:
     'mongodb': {
         'constructor': require('flora-mongodb'),
             'options': {
-                server': {
+                'ssl': true,
+                'authSource': 'admin',
+                'server': {
                     'host': 'localhost',
                     'port': 27017
                 },
