@@ -1,34 +1,35 @@
+/* global describe, it */
+
 'use strict';
 
-var expect = require('chai').expect;
-var bunyan = require('bunyan');
-var DataSource = require('../');
+const { expect } = require('chai');
+const bunyan = require('bunyan');
 
-var log = bunyan.createLogger({name: 'null', streams: []});
+const DataSource = require('../');
+
+const log = bunyan.createLogger({ name: 'null', streams: [] });
 
 // mock Api instance
-var api = {
-    log: log
-};
+const api = { log };
 
-describe('flora-mongodb', function () {
-    var config = {
+describe('flora-mongodb', () => {
+    const config = {
         server: {
             host: 'localhost',
             port: '27027'
         }
     };
 
-    it('should be a function', function () {
+    it('should be a function', () => {
         expect(DataSource).to.be.a('function');
     });
 
-    it('should be instantiable', function () {
-        expect(new DataSource(api, config)).to.be.an('object'); 
+    it('should be instantiable', () => {
+        expect(new DataSource(api, config)).to.be.an('object');
     });
 
-    it('should expose "prepare" and "process" functions', function () {
-        var ds = new DataSource(api, config);
+    it('should expose "prepare" and "process" functions', () => {
+        const ds = new DataSource(api, config);
         expect(ds).to.have.property('prepare');
         expect(ds.prepare).to.be.a('function');
         expect(ds).to.have.property('process');
