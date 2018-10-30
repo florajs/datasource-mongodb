@@ -8,6 +8,7 @@
     "test": "eslint . && mocha",
     "lint": "eslint ."
   },
+  "pre-commit": "test",
   "author": {
     "name": "BörseGo AG",
     "email": "it@boerse-go.de"
@@ -35,6 +36,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "mocha": "^5.2.0",
-    "mocha-bamboo-reporter": "^1.1.1"
+    "mocha-bamboo-reporter": "^1.1.1",
+    "pre-commit": "^1.2.2"
   }
 }
