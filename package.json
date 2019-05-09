@@ -1,6 +1,6 @@
 {
   "name": "flora-mongodb",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "description": "MongoDB connection for Flora",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,8 @@
     "node": ">=10"
   },
   "dependencies": {
-    "mongodb": "^3.2.3"
+    "mongodb": "^3.2.3",
+    "flora-errors": ""
   },
   "devDependencies": {
     "bunyan": "^1.8.12",
