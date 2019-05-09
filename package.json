@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "mongodb": "^3.2.3",
-    "flora-errors": ""
+    "flora-errors": "2.0.0-alpha.2"
   },
   "devDependencies": {
     "bunyan": "^1.8.12",
