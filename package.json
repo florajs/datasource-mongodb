@@ -30,7 +30,7 @@
     "flora-errors": "2.0.0"
   },
   "devDependencies": {
-    "bunyan": "^1.8.14",
+    "abstract-logging": "^2.0.0",
     "chai": "^4.2.0",
     "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.11.0",

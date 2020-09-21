@@ -3,11 +3,12 @@
 'use strict';
 
 const { expect } = require('chai');
-const bunyan = require('bunyan');
+const nullLogger = require('abstract-logging');
 
 const DataSource = require('../');
 
-const log = bunyan.createLogger({ name: 'null', streams: [] });
+const log = nullLogger;
+log.child = () => log;
 
 // mock Api instance
 const api = { log };
