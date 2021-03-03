@@ -26,7 +26,7 @@
     "node": ">=10"
   },
   "dependencies": {
-    "mongodb": "^3.6.4",
+    "mongodb": "^3.6.3",
     "flora-errors": "2.0.0"
   },
   "devDependencies": {
