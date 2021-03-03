@@ -1,6 +1,6 @@
 {
   "name": "flora-mongodb",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "MongoDB connection for Flora",
   "main": "lib/index.js",
   "scripts": {
