@@ -1,12 +1,10 @@
-# Flora MongoDB DataSource
+# flora-mongodb
 
 ![](https://github.com/godmodelabs/flora-mongodb/workflows/ci/badge.svg)
 [![NPM version](https://img.shields.io/npm/v/flora-mongodb.svg?style=flat)](https://www.npmjs.com/package/flora-mongodb)
 [![NPM downloads](https://img.shields.io/npm/dm/flora-mongodb.svg?style=flat)](https://www.npmjs.com/package/flora-mongodb)
 
-MongoDB connection for [Flora](https://github.com/godmodelabs/flora).
-
-This is a very early status of implementation and prone to change in the future.
+MongoDB data source for [Flora](https://github.com/godmodelabs/flora).
 
 ## Usage
 
@@ -14,64 +12,67 @@ This is a very early status of implementation and prone to change in the future.
 
 The module has to be added to a Flora config file by using the `dataSources` object.
 
-```
-'dataSources': {
-    ...
-    'mongodb': {
-        'constructor': require('flora-mongodb'),
-            'options': {
-                'server': {
-                    'host': 'localhost',
-                    'port': 27017
-                }
-            }
-        }
-    }
-    ...
-}
+```js
+module.exports = {
+    …
+    dataSources: {
+        mongodb: {
+            constructor: require('flora-mongodb'),
+                options: {
+                    server: {
+                        host: 'localhost',
+                        port: 27017
+                    },
+                },
+            },
+        },
+        …
+};
 ```
 
 Alternatively, a Replica Set can be used:
 
-```
-'dataSources': {
-    ...
-    'mongodb': {
-        'constructor': require('flora-mongodb'),
-            'options': {
-                'replicaSet': 'mycluster',
-                'servers': [
-                    {'host': 'mongo-1', 'port': 27017},
-                    {'host': 'mongo-2', 'port': 27017}
-                ]
-            }
-        }
-    }
-    ...
-}
+```js
+module.exports = {
+    …
+    dataSources: {
+        mongodb: {
+            constructor: require('flora-mongodb'),
+                options: {
+                    replicaSet: 'mycluster',
+                    servers: [
+                        { host: 'mongo-1', port: 27017 },
+                        { host: 'mongo-2', port: 27017 },
+                    ],
+                },
+            },
+        },
+        …
+};
 ```
 
 Other additional options:
 
-```
-'dataSources': {
-    ...
-    'mongodb': {
-        'constructor': require('flora-mongodb'),
-            'options': {
-                'ssl': true,
-                'authSource': 'admin',
-                'server': {
-                    'host': 'localhost',
-                    'port': 27017
+```js
+module.exports = {
+    …
+    dataSources: {
+        mongodb: {
+            constructor: require('flora-mongodb'),
+                options: {
+                    ssl: true,
+                    authSource: 'admin',
+                    server: {
+                        host: 'localhost',
+                        port: 27017
+                    },
+                    username: 'dbuser',
+                    password: 'dbpassword',
                 },
-                'username': 'dbuser',
-                'password': 'dbpassword'
-            }
-        }
-    }
-    ...
-}
+            },
+        },
+        …
+};
 ```
 
 ### Resources
