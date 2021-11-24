@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "mongodb": "^3.6.3",
-    "flora-errors": "2.0.0"
+    "flora-errors": "^2.0.0"
   },
   "devDependencies": {
     "abstract-logging": "^2.0.1",
