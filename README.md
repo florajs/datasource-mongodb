@@ -90,7 +90,7 @@ Given you want to use the database "mydatabase" on the host configured above. To
 
 Objects in the database look like this (storedType is used to convert the numerical "id" to the string representation in the database):
 
-```json
+```js
 {
     id: '123456',
     data: {
