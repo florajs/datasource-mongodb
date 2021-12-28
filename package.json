@@ -23,7 +23,7 @@
     }
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "dependencies": {
     "mongodb": "^3.6.3",
