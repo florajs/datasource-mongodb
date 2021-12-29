@@ -8,6 +8,9 @@
     "test": "mocha \"test/**/*.spec.js\"",
     "lint": "eslint ."
   },
+  "files": [
+    "lib/"
+  ],
   "pre-commit": "test",
   "author": {
     "name": "BörseGo AG",
