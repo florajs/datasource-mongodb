@@ -3,7 +3,7 @@
 const { expect } = require('chai');
 const nullLogger = require('abstract-logging');
 
-const DataSource = require('../');
+const DataSource = require('../lib');
 
 const log = nullLogger;
 log.child = () => log;
@@ -11,7 +11,7 @@ log.child = () => log;
 // mock Api instance
 const api = { log };
 
-describe('flora-mongodb', () => {
+describe('datasource-mongodb', () => {
     const config = {
         server: {
             host: 'localhost',

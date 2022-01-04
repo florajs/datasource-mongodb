@@ -1,8 +1,8 @@
-# flora-mongodb
+# @florajs/datasource-mongodb
 
 ![](https://github.com/florajs/datasource-mongodb/workflows/ci/badge.svg)
-[![NPM version](https://img.shields.io/npm/v/flora-mongodb.svg?style=flat)](https://www.npmjs.com/package/flora-mongodb)
-[![NPM downloads](https://img.shields.io/npm/dm/flora-mongodb.svg?style=flat)](https://www.npmjs.com/package/flora-mongodb)
+[![NPM version](https://img.shields.io/npm/v/@florajs/datasource-mongodb.svg?style=flat)](https://www.npmjs.com/package/@florajs/datasource-mongodb)
+[![NPM downloads](https://img.shields.io/npm/dm/@florajs/datasource-mongodb.svg?style=flat)](https://www.npmjs.com/package/@florajs/datasource-mongodb)
 
 MongoDB data source for [Flora](https://github.com/florajs/flora).
 
@@ -17,7 +17,7 @@ module.exports = {
     …
     dataSources: {
         mongodb: {
-            constructor: require('flora-mongodb'),
+            constructor: require('@florajs/datasource-mongodb'),
                 options: {
                     server: {
                         host: 'localhost',
@@ -37,7 +37,7 @@ module.exports = {
     …
     dataSources: {
         mongodb: {
-            constructor: require('flora-mongodb'),
+            constructor: require('@florajs/datasource-mongodb'),
                 options: {
                     replicaSet: 'mycluster',
                     servers: [
@@ -58,7 +58,7 @@ module.exports = {
     …
     dataSources: {
         mongodb: {
-            constructor: require('flora-mongodb'),
+            constructor: require('@florajs/datasource-mongodb'),
                 options: {
                     ssl: true,
                     authSource: 'admin',

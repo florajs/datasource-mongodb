@@ -1,5 +1,5 @@
 {
-  "name": "flora-mongodb",
+  "name": "@florajs/datasource-mongodb",
   "version": "2.0.4",
   "description": "MongoDB connection for Flora",
   "main": "lib/index.js",
@@ -25,17 +25,20 @@
       "email": "nico.kaiser@boerse-go.de"
     }
   ],
+  "keywords": [
+    "florajs"
+  ],
   "engines": {
     "node": ">=12"
   },
   "dependencies": {
     "mongodb": "^3.6.3",
-    "flora-errors": "^2.1.0"
+    "@florajs/errors": "^3.0.0"
   },
   "devDependencies": {
     "abstract-logging": "^2.0.1",
     "chai": "^4.3.4",
-    "eslint": "^8.5.0",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "mocha": "^9.1.3",
