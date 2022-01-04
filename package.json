@@ -16,9 +16,9 @@
     "name": "BörseGo AG",
     "email": "it@boerse-go.de"
   },
-  "homepage": "https://github.com/godmodelabs/flora-mongodb",
+  "homepage": "https://github.com/florajs/datasource-mongodb",
   "license": "MIT",
-  "repository": "godmodelabs/flora-mongodb",
+  "repository": "florajs/datasource-mongodb",
   "contributors": [
     {
       "name": "Nico Kaiser",

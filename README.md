@@ -1,10 +1,10 @@
 # flora-mongodb
 
-![](https://github.com/godmodelabs/flora-mongodb/workflows/ci/badge.svg)
+![](https://github.com/florajs/datasource-mongodb/workflows/ci/badge.svg)
 [![NPM version](https://img.shields.io/npm/v/flora-mongodb.svg?style=flat)](https://www.npmjs.com/package/flora-mongodb)
 [![NPM downloads](https://img.shields.io/npm/dm/flora-mongodb.svg?style=flat)](https://www.npmjs.com/package/flora-mongodb)
 
-MongoDB data source for [Flora](https://github.com/godmodelabs/flora).
+MongoDB data source for [Flora](https://github.com/florajs/flora).
 
 ## Usage
 
