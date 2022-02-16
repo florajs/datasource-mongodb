@@ -1,8 +1,8 @@
-# @florajs/datasource-mongodb
+# Deprecated
 
-![](https://github.com/florajs/datasource-mongodb/workflows/ci/badge.svg)
-[![NPM version](https://img.shields.io/npm/v/@florajs/datasource-mongodb.svg?style=flat)](https://www.npmjs.com/package/@florajs/datasource-mongodb)
-[![NPM downloads](https://img.shields.io/npm/dm/@florajs/datasource-mongodb.svg?style=flat)](https://www.npmjs.com/package/@florajs/datasource-mongodb)
+This project is deprecated and is no longer being maintained.
+
+# @florajs/datasource-mongodb
 
 MongoDB data source for [Flora](https://github.com/florajs/flora).
 
